@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("kotlin-kapt")
-    id 'androidx.navigation.safeargs.kotlin' version '2.7.5' apply false
 }
 
 android {
@@ -54,7 +53,7 @@ dependencies {
     implementation(libs.androidx.work.runtime.ktx) // Для сброса задач
     implementation(libs.kotlinx.coroutines.android) // Для асинхронных операций
 
-    implementation(libs.androidx.navigation.fragment.ktx) // Для навигации фрагментов
+    implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
 
     // Room (база данных)
