@@ -11,6 +11,9 @@ interface TaskDao {
     @Query("SELECT * FROM tasks WHERE isTemporary = 1")
     fun getTemporaryTasks(): Flow<List<Task>>
 
+    @Query("SELECT * FROM tasks WHERE isTemporary = 0")
+    fun getPermanentTasks(): Flow<List<Task>>
+
     @Insert
     suspend fun insert(task: Task)
 

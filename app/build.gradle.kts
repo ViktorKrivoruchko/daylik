@@ -46,6 +46,18 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.constraintlayout)
 
+// RecyclerView
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+
+    // Material Design
+    implementation("com.google.android.material:material:1.11.0")
+
+    // Lifecycle Scope
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+
+    // Корoutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
 
     // Новые зависимости
     implementation(libs.androidx.viewpager2) // Для свайпа между фрагментами
