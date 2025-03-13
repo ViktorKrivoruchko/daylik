@@ -26,12 +26,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val viewPager: ViewPager2 = findViewById(R.id.viewPager)
-        viewPager.adapter = ViewPagerAdapter(this)
-
         setSupportActionBar(binding.toolbar)
-
-        // Удалите всё, связанное с navController
 
         // WorkManager (оставьте, если нужно)
         val workRequest = PeriodicWorkRequest.Builder(
